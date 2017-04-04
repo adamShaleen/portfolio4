@@ -6,12 +6,26 @@
     position: absolute
     border-bottom: 1px solid
 
-.burgerIcon
+.menuIcon
     display: inline-block
     cursor: pointer
 
-#burgerIconBar1, #burgerIconBar2, #burgerIconBar3
-    width: 30px
+#menuBar1, #menuBar2, #menuBar3
+    width: 33px
     height: 2px
     background-color: black
     margin: 6px 0
+    transition: .3s ease-in-out
+
+.openMenu #menuBar1
+    -webkit-transform: rotate(-45deg) translate(-5px, 5px)
+    transform: rotate(-45deg) translate(-5px, 5px)
+
+
+.openMenu #menuBar2
+    opacity: 0
+
+
+.openMenu #menuBar3
+    -webkit-transform: rotate(45deg) translate(-5px, -7px)
+    transform: rotate(45deg) translate(-5px, -7px)
