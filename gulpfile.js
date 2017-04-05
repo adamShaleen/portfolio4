@@ -7,7 +7,7 @@ var sass = require('gulp-sass');
 var babel = require("gulp-babel");
 
 var paths = {
-  jsSource: ['./public/**/*.js', '!/public/scripts.js'],
+  jsSource: ['./public/**/*.js', '!./public/scripts.js'],
   sassSource: ['./public/**/*.sass', '!./public/style.css']
 };
 
