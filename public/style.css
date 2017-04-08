@@ -9,14 +9,20 @@
   border-bottom: 1px solid #7d7d7d; }
 
 .mobileNavTitles {
-  margin: 8px;
+  margin: 8px; }
+
+#mobileAbout, #mobileWork, #mobileRadical {
+  margin-right: 10px;
   opacity: 0;
   transition: .3s ease-in-out; }
 
-.mobileNavTitles span {
-  margin-right: 10px; }
+.openMenu #mobileAbout {
+  opacity: 1; }
 
-.openMenu .mobileNavTitles {
+.openMenu #mobileWork {
+  opacity: 1; }
+
+.openMenu #mobileRadical {
   opacity: 1; }
 
 .menuIcon {
