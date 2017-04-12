@@ -1,3 +1,63 @@
+#archerContainer {
+  display: flex;
+  justify-content: center;
+  margin: 10px; }
+
+.archer {
+  position: relative;
+  box-sizing: border-box;
+  float: left;
+  margin: 0 10px 10px 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  background: #FFF; }
+
+.archer:nth-child(4n+1) {
+  animation: wave 2s ease .0s infinite; }
+
+.archer:nth-child(4n+2) {
+  animation: wave 2s ease .2s infinite; }
+
+.archer:nth-child(4n+3) {
+  animation: wave 2s ease .4s infinite; }
+
+.archer:nth-child(4n+4) {
+  animation: wave 2s ease .6s infinite;
+  margin-right: 0; }
+
+@keyframes wave {
+  0% {
+    top: 0;
+    opacity: 1; }
+  50% {
+    top: 30px;
+    opacity: .2; }
+  100% {
+    top: 0;
+    opacity: 1; } }
+
+#footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+#footer a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: black; }
+
+#footer a:hover {
+  color: #8e8c8c; }
+
+body {
+  font-family: "Courier new", courier, monospace; }
+
 #mobileNavBar {
   display: flex;
   justify-content: space-between;
@@ -5,8 +65,7 @@
   text-align: right;
   width: 100%;
   z-index: 5;
-  position: absolute;
-  border-bottom: 1px solid #7d7d7d; }
+  position: absolute; }
 
 .mobileNavTitles {
   margin: 8px; }
