@@ -1,41 +1,25 @@
-#archerContainer {
-  display: flex;
-  justify-content: center;
-  margin: 10px; }
+#face {
+  margin: auto;
+  background: url("./style/img/adam.png");
+  width: 75vw;
+  height: 57vh;
+  margin-top: 25px;
+  background-size: contain;
+  background-repeat: no-repeat; }
 
-.archer {
-  position: relative;
-  box-sizing: border-box;
-  float: left;
-  margin: 0 10px 10px 0;
-  width: 12px;
-  height: 12px;
-  border-radius: 3px;
-  background: #FFF; }
+.spin {
+  animation: spin .75s linear; }
 
-.archer:nth-child(4n+1) {
-  animation: wave 2s ease .0s infinite; }
-
-.archer:nth-child(4n+2) {
-  animation: wave 2s ease .2s infinite; }
-
-.archer:nth-child(4n+3) {
-  animation: wave 2s ease .4s infinite; }
-
-.archer:nth-child(4n+4) {
-  animation: wave 2s ease .6s infinite;
-  margin-right: 0; }
-
-@keyframes wave {
+@keyframes spin {
   0% {
-    top: 0;
-    opacity: 1; }
+    transform: rotate(0deg); }
   50% {
-    top: 30px;
-    opacity: .2; }
+    width: 80vw;
+    height: 62vh; }
   100% {
-    top: 0;
-    opacity: 1; } }
+    transform: rotate(360deg);
+    width: 75vw;
+    height: 57vh; } }
 
 #footer {
   display: flex;
@@ -63,9 +47,7 @@ body {
   justify-content: space-between;
   padding: 10px;
   text-align: right;
-  width: 100%;
-  z-index: 5;
-  position: absolute; }
+  width: 100%; }
 
 .mobileNavTitles {
   margin: 8px; }
