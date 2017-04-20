@@ -27,9 +27,7 @@
   width: 100%;
   padding: 10px;
   position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0; }
+  bottom: 0; }
 
 #footer a {
   margin-right: 20px;
@@ -42,28 +40,28 @@
 body {
   font-family: "Courier new", courier, monospace; }
 
-#mobileNavBar {
+#navBar {
   display: flex;
   justify-content: space-between;
   padding: 10px;
   text-align: right;
   width: 100%; }
 
-.mobileNavTitles {
+.navTitles {
   margin: 8px; }
 
-#mobileAbout, #mobileWork, #mobileRadical {
+#about, #work, #radical {
   margin-right: 10px;
   opacity: 0;
   transition: .3s ease-in-out; }
 
-.openMenu #mobileAbout {
+.openMenu #about {
   opacity: 1; }
 
-.openMenu #mobileWork {
+.openMenu #work {
   opacity: 1; }
 
-.openMenu #mobileRadical {
+.openMenu #radical {
   opacity: 1; }
 
 .menuIcon {
@@ -87,3 +85,14 @@ body {
 .openMenu #menuBar3 {
   -webkit-transform: rotate(45deg) translate(-5px, -7px);
   transform: rotate(45deg) translate(-5px, -7px); }
+
+.sectionContent {
+  display: none;
+  margin: 35px; }
+
+.sectionContent a {
+  text-decoration: none;
+  color: black; }
+
+.sectionContent a:hover {
+  color: #8e8c8c; }
