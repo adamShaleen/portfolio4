@@ -1,9 +1,9 @@
 #face {
   margin: auto;
   background: url("./style/img/adam.png");
-  width: 75vw;
-  height: 57vh;
-  margin-top: 25px;
+  width: 18em;
+  height: 18em;
+  margin-top: 4em;
   background-size: cover;
   background-repeat: no-repeat; }
 
@@ -14,12 +14,12 @@
   0% {
     transform: rotate(0deg); }
   50% {
-    width: 80vw;
-    height: 62vh; }
+    width: 20em;
+    height: 20em; }
   100% {
     transform: rotate(360deg);
-    width: 75vw;
-    height: 57vh; } }
+    width: 18em;
+    height: 18em; } }
 
 #footer {
   display: flex;
@@ -88,7 +88,10 @@ body {
 
 .sectionContent {
   display: none;
-  margin: 35px; }
+  margin: auto;
+  margin-top: 3em;
+  max-width: 35em;
+  padding: 10px; }
 
 .sectionContent a {
   text-decoration: none;
